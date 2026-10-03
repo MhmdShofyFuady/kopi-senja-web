@@ -1,0 +1,48 @@
+/* ============================================
+   Kopi Senja — Design Tokens
+   ============================================
+   Single source of truth for every color, font,
+   and spacing value used across the site.
+   ============================================ */
+
+:root {
+  /* ---- Colors ---- */
+  --color-background: #faf6f1;       /* warm cream — page base */
+  --color-text: #3b2a1a;             /* deep espresso brown — body copy */
+  --color-primary: #6b3f23;          /* roasted coffee — headings, CTA */
+  --color-accent: #c8944a;           /* golden caramel — highlights, hover */
+  --color-muted: #a89279;            /* dusty latte — secondary text, borders */
+  --color-surface: #f0e8dd;          /* lighter cream — cards, navbar bg */
+  --color-white: #ffffff;
+
+  /* ---- Typography ---- */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.75rem;
+  --font-size-4xl: 3.5rem;
+
+  /* ---- Spacing (4px base) ---- */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* ---- Layout ---- */
+  --max-width: 1200px;
+  --nav-height: 4rem;
+  --border-radius: 0.5rem;
+
+  /* ---- Transitions ---- */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
