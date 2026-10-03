@@ -1,0 +1,108 @@
+/* ============================================
+   Hero Section
+   ============================================ */
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: var(--nav-height) var(--space-lg) var(--space-3xl);
+  overflow: hidden;
+}
+
+/* Background image */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark overlay so text stays readable */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(59, 42, 26, 0.55) 0%,
+    rgba(59, 42, 26, 0.75) 100%
+  );
+  z-index: 1;
+}
+
+/* Content */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1.15;
+  margin-bottom: var(--space-md);
+}
+
+.hero__title-accent {
+  color: var(--color-accent);
+}
+
+.hero__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-surface);
+  margin-bottom: var(--space-2xl);
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* CTA button */
+.hero__cta {
+  display: inline-block;
+  padding: var(--space-md) var(--space-2xl);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  text-transform: uppercase;
+  transition:
+    background-color var(--transition-base),
+    border-color var(--transition-base),
+    transform var(--transition-fast);
+}
+
+.hero__cta:hover,
+.hero__cta:focus-visible {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.hero__cta:active {
+  transform: translateY(0);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .hero__subtitle {
+    font-size: var(--font-size-base);
+  }
+}
